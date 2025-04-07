@@ -1,0 +1,9 @@
+services:
+  python-app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./app:/app
+    command: python /app/hello.py
+
